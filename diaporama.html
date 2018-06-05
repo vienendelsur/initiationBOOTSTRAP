@@ -22,8 +22,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent"><!-- la ul est dans une div avec class et id -->
                 <ul class="navbar-nav ml-auto"><!-- navbar-nav supprime les puces ml-auto empêcher le débordement de la navbar-->
-                    <li class="nav-item"><a href="index.html" class="nav-link active">Accueil</a></li>
-                    <li class="nav-item"><a href="diaporama.html" class="nav-link">Diaporama</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
+                    <li class="nav-item active"><a href="diaporama.html" class="nav-link">Diaporama</a></li>
                     <!-- ici nous mettons un menu déroulant -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Voir nos produits</a>
@@ -42,13 +42,61 @@
 
         <!-- ici on va mettre une section en pleine largeur sous la nav "a hero section", chez Bootstrap un "Jumbotron" c'est un composant -->
         <div class="jumbotron">
-            <h1 class="display-4">À la une, lundi 04 juin 2018 : bientôt l'été !!!</h1>
-            <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor voluptatum eos esse error nostrum dolore, nisi qui culpa corporis atque ipsa. Fuga in nisi reiciendis ipsam consequuntur repellat optio saepe?</p>
+            <h1 class="display-4">Les plus belles destinations de vacances </h1>
+            <!-- <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor voluptatum eos esse error nostrum dolore, nisi qui culpa corporis atque ipsa. Fuga in nisi reiciendis ipsam consequuntur repellat optio saepe?</p>
             <p class="lead">
                 <a href="#" class="btn btn-lg btn-primary" role="button">Préparez l'été...</a>
-            </p>
+            </p> -->
         </div><!-- fin de la div class jumbrotron -->
 
+        <div class="row mb-4">
+            <div class="col-lg-12 center-block">
+                <div id="carousel01" class="carousel slide" data-ride="carousel">
+                    <!-- ici on place les indicateurs -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel01" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel01" data-slide-to="1"></li>
+                    </ol>
+                    <!-- le diaporama est dans une div avec un id et sa classe et data-ride -->
+                    <div class="carousel-inner">
+                        <!-- tous les items du diaporama sont dans une div avec la class carousel-inner > interne-->
+                        <div class="carousel-item active">
+                            <img src="img/panorama.jpg" alt="Porto Pollo" class="w-100 d-block">
+                            <!-- et ici la légende de la photo -->
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Le port de Porto-Pollo</h5>
+                                    <p>En été, le port est magnifique...</p>
+                                </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/1000x370_3_schwyz_ivan_mythen_grund.jpg" alt="la montagne" class="w-100 d-block">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>La montagne suisse</h5>
+                                    <p>Courir dans les alpages avec les vaches</p>
+                                </div>
+                        </div>
+                    </div> 
+                    <!-- ici nous plaçons les liens de contrôles du diaporama -->
+                    <a href="#carousel01" role="button" class="carousel-control-prev" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Précédent</span>
+                    </a>
+                    <!-- sr = screen reader -->
+                    <a href="#carousel01" role="button" class="carousel-control-next" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Suivant</span>
+                    </a>
+                </div><!-- fin du diaporama -->
+            </div><!-- fin col -->
+        </div><!-- fin rangée -->
+<div class="row fond_orange mb-4 p-4">
+    <div class="col-lg-6">
+        <img src="img/venise02.jpg" alt="venise" class="img-fluid rounded">
+    </div>
+    <div class="col-lg-6">
+        <img src="img/venise02.jpg" alt="venise" class="img-fluid rounded">
+    </div>
+</div>
         <!-- ici commence la grille de bootstrap avec une rangée 1 et des colonnes : 3 colonnes-->
         <!-- <img src="img/geometic-bg-blue.jpg" class="img-fluid" alt="Responsive image"> -->
         <div class="row">
@@ -81,35 +129,7 @@
             </div><!-- fin col 3 -->
         </div><!-- fin de la div class row 1 -->
 
-        <!-- une nouvelle rangée 2 -->
-         <div class="row mt-sm-4 mt-md-0">
-            <div class="col-sm-12 col-md-8 text-sm-center text-md-left">
-                <h3>Un titre 3</h3>
-                <p class="lead">Un paragraphe class lead</p> <!-- la class .lead vient après un titre -->
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad quas itaque adipisci odio perspiciatis sunt. Voluptatibus perferendis suscipit exercitationem veritatis voluptates. Modi impedit minima molestias voluptas quam quibusdam iusto dolore.</p>
-            </div>
-            <!-- la colonne 2 in rangée 2 -->
-            <div class="col-sm-12 col-md-4">
-                <!-- Une navigation verticale -->
-                <h3>Menu secondaire</h3>
-                <ul class="nav flex-column nav-pills">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link active">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Lien 1</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Lien 2</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Lien 3</a>
-                    </li>
-                </ul>
-            </div> 
-        </div>
-        <!-- fin de la rangée 2 -->
-        <!-- rangée 3 -->
+        <!-- une rangée 2 -->
         <div class="row">
                 <div class="col-md-12 col-lg-3">
                     <h5>Col 1</h5>
